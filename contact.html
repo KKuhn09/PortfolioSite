@@ -28,8 +28,12 @@
 		</div>
 	</nav>
 	<!--Carousel-->
-	<div id ="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-		<!--Wrapper for slides-->
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+   			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  		</ol>
 		<div class="carousel-inner">
 			<div class="item active">
 				<div class="slide1"></div>
@@ -37,9 +41,11 @@
 			<div class="item">
             	<div class="slide2"></div>
         	</div>
+        	<div class="item">
+            	<div class="slide3"></div>
+        	</div>
 		</div>
 	   	<div class="container-fluid carousel-overlay text-center">
-
 	   	 	<h1 class="text-center">Contact</h1>
 
 			<div class="form-group">
@@ -58,7 +64,6 @@
 			</div>
 
 			<button type="button" class="btn btn-primary">Submit</button>
-
 	   	</div>
     </div>
    	<!--Sticky footer-->

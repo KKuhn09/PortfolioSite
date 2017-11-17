@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>About</title>
+	<title>Portfolio</title>
 	<!--Imports reset.css -->
 	<link rel="reset" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -27,9 +27,18 @@
 		         
 		</div>
 	</nav>
-	<!--Pages main content-->
-    <div class="jumbotron">
-	   	<div class="container-fluid">
+	<!--Carousel-->
+	<div id ="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<!--Wrapper for slides-->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="slide1"></div>
+			</div>
+			<div class="item">
+            	<div class="slide2"></div>
+        	</div>
+		</div>
+		<div class="container-fluid carousel-overlay text-center">
 	   	 	<h1 class="text-center">Portfolio</h1>
 			<div class="container">
 				<img src="http://lorempixel.com/200/150/" style="margin:10px;">
@@ -38,7 +47,7 @@
 				<img src="http://lorempixel.com/200/150/" style="margin:10px;">
 				<img src="http://lorempixel.com/200/150/" style="margin:10px;">
 			</div>
-	   	 </div>
+	   	</div>
    	 </div>
    	<!--Sticky footer-->
    	<footer class="footer">

@@ -1,8 +1,33 @@
+*{
+	color:white;
+}
 body{
 	margin: 0; padding: 0;
 }
-.jumbotron{
+.slide1, .slide2, .slide3 {
 	height: 90vh;
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
+}
+.slide1{	
+	background: url("../images/chicago.jpg");
+	background-size: 100%;
+}
+.slide2{
+	background: url("../images/washington_dc.jpg");
+	background-size: 100%;
+}
+.slide3{
+	background: url("../images/colorado.jpg");
+	background-size: 100%;
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
 }
 .footer {
     position: fixed;

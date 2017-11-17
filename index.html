@@ -27,25 +27,37 @@
 		         
 		</div>
 	</nav>
-	<!--Pages main content-->
-	<div class="jumbotron">
-	   	<div class="container-fluid">
-	   	 	<!-- Imports headshot.jpg from the images dir within the assets dir -->
-	   	 	<div class="text-center">
+	<!--Carousel-->
+	<div id ="bg-fade-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<!--Wrapper for slides-->
+		<div class="carousel-inner">
+			<div class="item active">
+				<div class="slide1"></div>
+			</div>
+			<div class="item">
+            	<div class="slide2"></div>
+        	</div>
+			<div class="item">
+            	<div class="slide3"></div>
+        	</div>
+        </div>
+		<div class="container-fluid carousel-overlay text-center">
+			<h1>Kieran Kuhn</h1>
+			<div>
 				<img src="assets/images/headshot.png" alt="Kieran's picture" style="border-radius:100px">
 			</div>
-			<h1 class="text-center">About Me</h1>
-			<p class="text-center">
+			<h2>About Me</h2>
+			<p>
 			I am a front end and back end web developer who can quickly pick up new technologies and implement them in my web applications. Some technologies I am strong with are HTML5/CSS3, Node.js, Express, MongoDB, and mySql. I have experience working with teams on a deadline basis to produce minimum viable products.
 			</p>
-			<p class="text-center">
-			A lifelong computer enthusiast who loves to solve real world problems through development of web applications.
+			<p>
+			Lifelong computer enthusiast who loves to solve real world problems through development of web applications.
 			</p>
-			<p class="text-center">
+			<p>
 			Fullstack Javascript Web Development Certified.
 			</p>
-	   	 </div>
-   	 </div>
+		</div>
+	</div>
    	<!--Sticky footer-->
    	<footer class="footer">
    		<div class="container-fluid">

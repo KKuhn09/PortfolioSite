@@ -1,6 +1,8 @@
 body{
-	overflow: hidden;
 	margin: 0; padding: 0;
+}
+.jumbotron{
+	height: 90vh;
 }
 .footer {
     position: fixed;

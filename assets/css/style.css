@@ -1,6 +1,5 @@
 *{
 	color:white;
-	text-shadow:2px 2px 5px black;
 }
 body{
 	margin: 0; padding: 0;
@@ -43,7 +42,7 @@ hr{
     left: 0;
 }
 .carousel-overlay {
-    position: absolute;
+    margin: auto;
     bottom: 100px;
     right: 0;
     left: 0;

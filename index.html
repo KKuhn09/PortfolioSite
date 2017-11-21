@@ -5,106 +5,162 @@
 	<title>About</title>
 	<!--Imports reset.css -->
 	<link rel="reset" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- Latest compiled and minified Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">	
+	<!--Import styles.css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-
 <body>
-
-	<!--Navagation/header area with links to the About, Portfolio, and Contact Pages-->
-	<nav class="navbar navbar-inverse navbar-static-top" style="margin-bottom:0px">
-		<div class="container-fluid">
-
-			<div class="navbar-header">
-				<a class="navbar-brand">Kieran Kuhn</a>
+	<!--Nav-->
+	<header>
+		<nav class="top-nav deep-purple">
+			<div class="container">
+				<div class="nav-wrapper center">
+					<a class="page-title">Portfolio</a>
+				</div>
 			</div>
-		    <ul class="nav navbar-nav navbar-right">
-		    	<!-- "href" attributes create a clickable link-->
-		        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-		        <li><a href="#carouselIndicators"><span class="glyphicon glyphicon-list-alt"></span> Portfolio</a></li>
-		        <li><a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-		    </ul>
-		         
+		</nav>
+		<div class="container">
+			<a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
+				<i class="material-icons">menu</i>
+			</a>
 		</div>
-	</nav>
+		<ul id="nav-mobile" class="side-nav fixed" style="width:300px;transform:translateX(0px);">
+			<li><div class="user-view">
+				<div class="background">
+				    <img src="assets/images/nightsky.jpg" alt="nightsky" style="height:250px;width:300px;">
+				</div>
+				<a><img class="circle" src="assets/images/headshot3.jpg"></a>
+	      		<a><span class="white-text name">Kieran Kuhn</span></a>
+	      		<a><span class="white-text email">kuhn.kieran@gmail.com</span></a>
+			</div></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
 
-	<!--Description area-->
-	<div class="container-fluid carousel-overlay text-center" style="text-shadow:2px 2px 5px black;">
-		<h1>Kieran Kuhn</h1><br>
-		<div>
-			<img src="assets/images/headshot.png" alt="Kieran's picture" style="border-radius:10px;">
-		</div>
-		<h1>About Me</h1>
-		<hr>
-		<p>
-		I am a front end and back end web developer who can quickly pick up new technologies and implement them in my web applications. Some technologies I am strong with are HTML5/CSS3, Node.js, Express, MongoDB, and mySql. I have experience working with teams on a deadline basis to produce minimum viable products.
-		</p>
-		<p>
-		Lifelong computer enthusiast who loves to solve real world problems through development of web applications.
-		</p>
-		<p>
-		Fullstack Javascript Web Development Certified.
-		</p>
-	</div>
+	<!--Page Content-->
+	<main>
+		<!--Description area-->
+		<div class="row about">
+			<div class="carousel carousel-slider center" data-indicators="true" id="about">
+				<div class="container">
+					<div class="carousel-fixed-item top center">
+						<h1>About Me</h1>
+						<hr>
+						<p>
+						I am a front end and back end web developer who can quickly pick up new technologies and implement them in my web applications. Some technologies I am strong with are HTML5/CSS3, Node.js, Express, MongoDB, and mySql. I have experience working with teams on a deadline basis to produce minimum viable products.
+						</p>
+						<p>
+						Lifelong computer enthusiast who loves to solve real world problems through development of web applications.
+						</p>
+						<p>
+						Fullstack Javascript Web Development Certified.
+						</p>
+					</div>
+					<a class="carousel-item" href="#one!"><img src="./assets/images/chicago.jpg"></a>
+	    			<a class="carousel-item" href="#two!"><img src="./assets/images/washington_dc.jpg"></a>
+	    			<a class="carousel-item" href="#three!"><img src="./assets/images/colorado.jpg"></a>
+				</div>
+	  		</div>
+  		</div>
+		
+		<!--Project Area-->
+		<div class="row projects" id="projects">
 
-	<!--Carousel-->
-	<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-    		<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-   			<li data-target="#carouselIndicators" data-slide-to="1"></li>
-    		<li data-target="#carouselIndicators" data-slide-to="2"></li>
-  		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<div class="slide1"></div>
+			<div class="col s12">
+				<h1 class="center">Projects</h1>
 			</div>
-			<div class="item">
-            	<div class="slide2"></div>
-        	</div>
-			<div class="item">
-            	<div class="slide3"></div>
-        	</div>
-        </div>
-	</div>
 
-	<!--Contact Area-->
-	<div class="container-fluid carousel-overlay text-center">
-	   	<h1 class="text-center">Contact</h1>
-		<!-- Where success/error messages will go -->
-		<div id="form-messages"></div>
+			<div class="col s5 offset-s1">
+				<div class="card deep-purple">
+					<div class="card-content white-text">
+						<span class="card-title">Project 1</span>
+						<p>Description of the project goes here sonny boy</p>
+					</div>
+					<div class="card-action">
+						<a href="https://gatan45.github.io/Starwars_Char_Gen/" target="_blank">Check it out!</a>
+					</div>
+				</div>
+			</div>
 
-		<div class="form-group">
-			<label for="name">Name:</label>
-			<input type="text" class="form-control" placeholder="John Doe" required><br>
+			<div class="col s5">
+				<div class="card deep-purple">
+					<div class="card-content white-text">
+						<span class="card-title">Project 2</span>
+						<p>Description of the project goes here sonny boy</p>
+					</div>
+					<div class="card-action">
+						<a href="" target="_blank">Check it out!</a>
+					</div>
+				</div>
+			</div>
+
 		</div>
 
-		<div class="form-group">
-			<label for="email">Email:</label>
-			<input type="email" class="form-control" placeholder="example@example.com" required><br>
+  		<!--Contact Area-->
+  		<div class="row contact" id="contact">
+	  		<div class="container">
+	  			<h1 class="center">Contact</h1>
+
+	  			<form class="col s12">
+
+	  				<div class="row">
+	  					<div class="input-field col s6">
+	  						<label for="name">Name:</label>
+							<input type="text" required><br>
+	  					</div>
+	  					<div class="input-field col s6">
+	  						<label for="email">Email:</label>
+	  						<input type="email" required>
+	  					</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<label for="textarea1">Textarea</label>
+							<textarea id="textarea1" class="materialize-textarea" required></textarea>
+						</div>
+					</div>
+
+					<button type="submit" class="btn btn-primary">Submit</button>
+
+				</form>
+
+			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="message">Message:</label>
-			<textarea class="form-control" id="message" required></textarea>
+	</main>
+
+	<!--Footer-->
+	<footer class="page-footer deep-purple">
+		<div class="container">
+			<div class="row">
+			    <div class="col l6 s12">
+			        <h5 class="white-text">Connect With Me</h5><hr>
+			        <p class="grey-text text-lighten-4">Check out my code on Github or connect with me on Linkedin. Click the links on the side</p>
+			    </div>
+				<div class="col l4 offset-l2 s12">
+				    <h5 class="white-text">Links</h5><hr>
+					<div class="container-fluid">
+						<a href="https://github.com/KKuhn09" target="_blank"><img src="assets/images/github_icon.png" alt="Github Icon" style="width:48px;height:48px;"></a><br>
+						<a href="https://www.linkedin.com/in/kieran-kuhn-7bb5b1143/" target="_blank"><img src="assets/images/linkedin_icon.png" alt="Linkedin Icon" style="width:48px;height:48px"></a>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<button type="submit" class="btn btn-primary">Submit</button>
-	</div>
-
-   	<!--Footer-->
-   	<footer class="footer">
-   		<div class="container-fluid">
-			<a href="https://github.com/KKuhn09" target="_blank"><img src="assets/images/github_icon.png" alt="Github Icon" style="width:48px;height:48px;"></a>
-			<a href="https://www.linkedin.com/in/kieran-kuhn-7bb5b1143/" target="_blank"><img src="assets/images/linkedin_icon.png" alt="Linkedin Icon" style="width:48px;height:48px"></a>
-   		</div>
-   	</footer>
+		<div class="footer-copyright center">
+			<div class="container">© 2017 Kieran Kuhn</div>
+		</div>
+	</footer>
 
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="./assets/app/app.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 	<!-- Compiled and minified JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  	<script src="./assets/app/app.js"></script>
 
 </body>
 </html>

@@ -6,6 +6,9 @@ header, main, footer {
         padding-left: 0;
     }
 }
+h1{
+    font-weight: 300;
+}
 .about{
     height:100vh;
 }

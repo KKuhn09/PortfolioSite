@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kieran's Portfolio</title>
-	<!--Imports reset.css -->
+	<!--Import reset.css -->
 	<link rel="reset" type="text/css" href="assets/css/reset.css">
 	<!-- Compiled and minified Materialize CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -15,7 +15,7 @@
 </head>
 <body>
 	<header>
-		<!--Nav Areas-->
+		<!--Nav Area-->
 		<div class="navbar-fixed">
 			<nav class="top-nav">
 				<div class="container">
@@ -42,7 +42,7 @@
 	</header>
 	<!--Page Content-->
 	<main>
-		<!--Description Carousel-->
+		<!--Description Area-->
 		<div class="row about" id="about">
 			<div class="container">
 				<h1>Kieran Kuhn</h1>
@@ -105,26 +105,25 @@
 	  			<div class="col s12">
 	  				<h1>Contact Me</h1><hr><br>
 	  			</div>
-	  			<form class="col s12">
+	  			<form class="col s12" action="https://postmail.invotes.com/send" method="post">
 	  				<div class="row">
 	  					<div class="input-field col s6">
-	  						<label for="name">Name:</label>
-							<input type="text" required><br>
+	  						<label for="name">Name</label>
+	  						<input type="text" name="subject" />
 	  					</div>
-	  					<div class="input-field col s6">
-	  						<label for="email">Email:</label>
-	  						<input type="email" required>
-	  					</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<label for="textarea1">Textarea</label>
-							<textarea id="textarea1" class="materialize-textarea" required></textarea>
-						</div>
-					</div>
-					<button type="submit" class="btn waves-effect waves-light deep-purple lighten-1">Send
-						<i class="material-icons right">send</i>
-					</button>
+	  				</div>
+	  				<div class="row">
+	  					<div class="input-field col s12">
+	  						<label for="textarea1">Message</label>
+    						<textarea name="text" class="materialize-textarea" name="textarea1"></textarea>
+    					</div>
+    				</div>
+    				<input type="hidden" name="access_token" value="puem893b5kj58m9mx5dhw23g" />
+    				<input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+    				<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+    				<button class="btn waves-effect waves-light deep-purple lighten-1" type="submit" value="Send">
+    					Send<i class="material-icons right">send</i>
+    				</button>
 				</form>
 			</div>
 		</div>
